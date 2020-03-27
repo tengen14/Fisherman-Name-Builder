@@ -299,6 +299,8 @@ const fishAdjs = [
 
 const rollFish = document.querySelector("#roll-fish");
 const title = document.querySelector("#title");
+const fishAdj = document.querySelector("#fish-adj");
+const fishNoun = document.querySelector("#fish-noun");
 
 rollFish.addEventListener("click", function() {
   rollFish.innerHTML = "Click again to get another random fish name!";
@@ -308,4 +310,10 @@ rollFish.addEventListener("click", function() {
   const randomNoun = fishNouns[Math.floor(Math.random() * fishNouns.length)];
 
   console.log(randomAdj + " " + randomNoun);
+
+  fishAdj.innerHTML = randomAdj;
+  fishNoun.innerHTML = randomNoun;
+
+  fishAdj.style.display="block";
+  fishNoun.style.display="block";
 });
