@@ -8,6 +8,10 @@ body {
     flex-direction: column;
 }
 
+h2 {
+    display: none;
+}
+
 /* #roll-fish {
     
 } */
