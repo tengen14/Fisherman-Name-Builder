@@ -304,7 +304,7 @@ const fishNoun = document.querySelector("#fish-noun");
 
 rollFish.addEventListener("click", function() {
   rollFish.innerHTML = "Click again to get another random fish name!";
-  title.innerHTML = "";
+  title.style.display = "none";
 
   const randomAdj = fishAdjs[Math.floor(Math.random() * fishAdjs.length)];
   const randomNoun = fishNouns[Math.floor(Math.random() * fishNouns.length)];
@@ -314,6 +314,6 @@ rollFish.addEventListener("click", function() {
   fishAdj.innerHTML = randomAdj;
   fishNoun.innerHTML = randomNoun;
 
-  fishAdj.style.display="block";
-  fishNoun.style.display="block";
+  fishAdj.style.display = "block";
+  fishNoun.style.display = "block";
 });
