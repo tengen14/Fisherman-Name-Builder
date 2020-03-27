@@ -1,21 +1,27 @@
 body {
-    background-color: lightcoral;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 0.3029586834733894) 0%,
+    rgba(45, 253, 163, 0.6026785714285714) 100%
+  );
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2rem;
 }
 
 h2 {
-    display: none;
-    padding: 0px 5px 0px 5px;
+  display: none;
+  padding: 0px 5px 0px 5px;
 }
 
 div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* #roll-fish {
