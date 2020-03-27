@@ -297,15 +297,15 @@ const fishAdjs = [
   "Zesty"
 ];
 
-const randomAdj = fishAdjs[Math.floor(Math.random() * fishAdjs.length)];
-const randomNoun = fishNouns[Math.floor(Math.random() * fishNouns.length)];
-
-console.log(randomAdj + " " + randomNoun);
-
 const rollFish = document.querySelector("#roll-fish");
 const title = document.querySelector("#title");
 
 rollFish.addEventListener("click", function() {
-    rollFish.innerHTML = "Click again to get another random fish name!";
-    title.innerHTML = "";
+  rollFish.innerHTML = "Click again to get another random fish name!";
+  title.innerHTML = "";
+
+  const randomAdj = fishAdjs[Math.floor(Math.random() * fishAdjs.length)];
+  const randomNoun = fishNouns[Math.floor(Math.random() * fishNouns.length)];
+
+  console.log(randomAdj + " " + randomNoun);
 });
