@@ -297,5 +297,7 @@ const fishAdjs = [
   "Zesty"
 ];
 
-console.log(fishNouns);
-console.log(fishAdjs);
+const randomAdj = fishAdjs[Math.floor(Math.random() * fishAdjs.length)];
+const randomNoun = fishNouns[Math.floor(Math.random() * fishNouns.length)];
+
+console.log(randomAdj + " " + randomNoun);
