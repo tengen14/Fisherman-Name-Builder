@@ -306,5 +306,6 @@ const rollFish = document.querySelector("#roll-fish");
 const title = document.querySelector("#title");
 
 rollFish.addEventListener("click", function() {
+    rollFish.innerHTML = "Click again to get another random fish name!";
     title.innerHTML = "";
 });
